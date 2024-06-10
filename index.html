@@ -1,0 +1,392 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width initial-scale=1">
+
+<style>
+
+body{
+
+background: linear-gradient(90deg,white,#f2f8ff);
+
+margin:0px;
+
+}
+
+p{
+
+font-family:lato;
+
+color:#fff;
+
+font-weight:bold;
+
+}
+
+.walkpath{
+
+width: 100%;
+
+height:50px;
+
+bottom:0px;
+
+position:fixed;
+
+background: linear-gradient(310deg,#444,#994C00);
+
+}
+
+.road-divider{
+
+width: 100%;
+
+height:5px;
+
+bottom:30px;
+
+position:fixed;
+
+background-color: #f2f8ff;
+
+}
+
+.right-road-side{
+
+width: 100%;
+
+height:30px;
+
+bottom:30px;
+
+position:fixed;
+
+background-color: #777;
+
+}
+
+.right-road-side:after{
+
+content:"";
+
+width: 100%;
+
+height:3px;
+
+bottom:50px;
+
+position:fixed;
+
+background-color: #222;
+
+}
+
+.left-road-side{
+
+width: 100%;
+
+height:10px;
+
+bottom:0px;
+
+z-index:1;
+
+position:fixed;
+
+background-color: #777;
+
+}
+
+.left-road-side:after{
+
+content:"";
+
+width: 100%;
+
+height:3px;
+
+bottom:0px;
+
+position:fixed;
+
+background-color: #222;
+
+}
+
+.mountain{
+
+width: 60%;
+
+height:130px;
+
+z-index:-1;
+
+border-top-right-radius: 100%;
+
+bottom:55px;
+
+position: fixed;
+
+background-color: green;
+
+}
+
+.mountain:before{
+
+content:"";
+
+width: 30%;
+
+height:300px;
+
+z-index:-1;
+
+border-top-right-radius: 100%;
+
+bottom:55px;
+
+position: fixed;
+
+background: linear-gradient(310deg,#444,green);
+
+}
+
+.mountain2{
+
+width: 80%;
+
+height:130px;
+
+z-index:-1;
+
+left:100%;
+
+margin-left:-200px;
+
+border-top-left-radius: 100%;
+
+bottom:55px;
+
+position: fixed;
+
+background: linear-gradient(310deg,#444,green);
+
+}
+
+.mountain4{
+
+content:"";
+
+width: 80%;
+
+height:300px;
+
+z-index:-3;
+
+left:100%;
+
+margin-left:-200px;
+
+border-top-left-radius: 100%;
+
+bottom:55px;
+
+position: fixed;
+
+background: linear-gradient(310deg,#444,green);
+
+}
+
+.mountain3{
+
+width: 80%;
+
+height:200px;
+
+z-index:-2;
+
+left:50%;
+
+margin-left:-100px;
+
+border-top-left-radius: 100%;
+
+border-top-right-radius: 200%;
+
+bottom:55px;
+
+position: fixed;
+
+background: linear-gradient(310deg,#444,green);
+
+}
+
+.sun{
+
+width:50px;
+
+height:50px;
+
+border-radius:50%;
+
+margin-left:auto;
+
+margin-right: auto;
+
+background-color: yellow;
+
+box-shadow:3px 3px 300px 30px orange;
+
+}
+
+.cloud{
+
+width:100px;
+
+height:50px;
+
+margin-left:40px;
+
+border-radius:50%;
+
+background-color: skyblue;
+
+transition:10s;
+
+animation-name:rocket;
+
+animation-duration:3s;
+
+animation-iteration-count: infinite;
+
+}
+
+@keyframes rocket{
+
+0%{
+
+left:5%;
+
+margin-left:-20px;
+
+position: relative;
+
+transition:10s;
+
+}
+
+50%{
+
+left:70%;
+
+position: relative;
+
+}
+
+100%{
+
+left:5%;
+
+margin-left:-20px;
+
+position: relative;
+
+transition:10s;
+
+}
+
+}
+
+.bottom-left-cloud{
+
+width:30px;
+
+height:30px;
+
+left:-7px;
+
+top:-4px;
+
+border-radius:50%;
+
+position: relative;
+
+background-color: skyblue;
+
+}
+
+.top-left-cloud{
+
+width:30px;
+
+height:30px;
+
+left:-7px;
+
+top:-7px;
+
+border-radius:50%;
+
+position: relative;
+
+background-color: skyblue;
+
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<h2> </h2>
+
+
+
+<div class="sun"></div>
+
+
+
+<div class="cloud">
+
+<div class="top-left-cloud"></div>
+
+<div class="bottom-left-cloud"></div>
+
+</div>
+
+
+
+
+
+<div class="mountain"></div>
+
+<div class="mountain2"></div>
+
+<div class="mountain3"></div>
+
+<div class="mountain4"></div>
+
+
+
+<div class="right-road-side"></div>
+
+<div class="walkpath"></div>
+
+<div class="road-divider"></div>
+
+<div class="left-road-side"></div>
+
+
+
+</body>
+  </html
