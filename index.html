@@ -1,392 +1,114 @@
 <!DOCTYPE HTML>
-
-<html>
-
+<html lang="en">
 <head>
-
+<!-- Primary Meta Tags -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width initial-scale=1">
-
-<style>
-
-body{
-
-background: linear-gradient(90deg,white,#f2f8ff);
-
-margin:0px;
-
-}
-
-p{
-
-font-family:lato;
-
-color:#fff;
-
-font-weight:bold;
-
-}
-
-.walkpath{
-
-width: 100%;
-
-height:50px;
-
-bottom:0px;
-
-position:fixed;
-
-background: linear-gradient(310deg,#444,#994C00);
-
-}
-
-.road-divider{
-
-width: 100%;
-
-height:5px;
-
-bottom:30px;
-
-position:fixed;
-
-background-color: #f2f8ff;
-
-}
-
-.right-road-side{
-
-width: 100%;
-
-height:30px;
-
-bottom:30px;
-
-position:fixed;
-
-background-color: #777;
-
-}
-
-.right-road-side:after{
-
-content:"";
-
-width: 100%;
-
-height:3px;
-
-bottom:50px;
-
-position:fixed;
-
-background-color: #222;
-
-}
-
-.left-road-side{
-
-width: 100%;
-
-height:10px;
-
-bottom:0px;
-
-z-index:1;
-
-position:fixed;
-
-background-color: #777;
-
-}
-
-.left-road-side:after{
-
-content:"";
-
-width: 100%;
-
-height:3px;
-
-bottom:0px;
-
-position:fixed;
-
-background-color: #222;
-
-}
-
-.mountain{
-
-width: 60%;
-
-height:130px;
-
-z-index:-1;
-
-border-top-right-radius: 100%;
-
-bottom:55px;
-
-position: fixed;
-
-background-color: green;
-
-}
-
-.mountain:before{
-
-content:"";
-
-width: 30%;
-
-height:300px;
-
-z-index:-1;
-
-border-top-right-radius: 100%;
-
-bottom:55px;
-
-position: fixed;
-
-background: linear-gradient(310deg,#444,green);
-
-}
-
-.mountain2{
-
-width: 80%;
-
-height:130px;
-
-z-index:-1;
-
-left:100%;
-
-margin-left:-200px;
-
-border-top-left-radius: 100%;
-
-bottom:55px;
-
-position: fixed;
-
-background: linear-gradient(310deg,#444,green);
-
-}
-
-.mountain4{
-
-content:"";
-
-width: 80%;
-
-height:300px;
-
-z-index:-3;
-
-left:100%;
-
-margin-left:-200px;
-
-border-top-left-radius: 100%;
-
-bottom:55px;
-
-position: fixed;
-
-background: linear-gradient(310deg,#444,green);
-
-}
-
-.mountain3{
-
-width: 80%;
-
-height:200px;
-
-z-index:-2;
-
-left:50%;
-
-margin-left:-100px;
-
-border-top-left-radius: 100%;
-
-border-top-right-radius: 200%;
-
-bottom:55px;
-
-position: fixed;
-
-background: linear-gradient(310deg,#444,green);
-
-}
-
-.sun{
-
-width:50px;
-
-height:50px;
-
-border-radius:50%;
-
-margin-left:auto;
-
-margin-right: auto;
-
-background-color: yellow;
-
-box-shadow:3px 3px 300px 30px orange;
-
-}
-
-.cloud{
-
-width:100px;
-
-height:50px;
-
-margin-left:40px;
-
-border-radius:50%;
-
-background-color: skyblue;
-
-transition:10s;
-
-animation-name:rocket;
-
-animation-duration:3s;
-
-animation-iteration-count: infinite;
-
-}
-
-@keyframes rocket{
-
-0%{
-
-left:5%;
-
-margin-left:-20px;
-
-position: relative;
-
-transition:10s;
-
-}
-
-50%{
-
-left:70%;
-
-position: relative;
-
-}
-
-100%{
-
-left:5%;
-
-margin-left:-20px;
-
-position: relative;
-
-transition:10s;
-
-}
-
-}
-
-.bottom-left-cloud{
-
-width:30px;
-
-height:30px;
-
-left:-7px;
-
-top:-4px;
-
-border-radius:50%;
-
-position: relative;
-
-background-color: skyblue;
-
-}
-
-.top-left-cloud{
-
-width:30px;
-
-height:30px;
-
-left:-7px;
-
-top:-7px;
-
-border-radius:50%;
-
-position: relative;
-
-background-color: skyblue;
-
-}
-
-
-
-</style>
-
+<meta name="viewport" content="width=device-width, initial scale=1">
+<link rel="canonical" href="index.html">
+<title>Page Generator</title>
+<meta name="title" content="Html Page Details Generator">
+
+<script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Page Generator",
+      "url" : "index.html"
+    }
+  </script>
+
+<meta name="description" content="This site is for creating html files by filling in the designated details.">
+<meta property= "keyword" content= "Site generator">
+<meta property= "og:keyword" content= "Site generator">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="English">
+<meta property="og:image" href="img/background.webp">
+<link rel="icon" href="img/logo.png">
+<link rel="og:icon" href="img/logo.png">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Html Page Details Generator">
+<meta itemprop="description" content="This site is for creating html files by filling in the designated details.">
+<meta itemprop="image" content="img/background.webp">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Page Generator">
+<meta property="og:url" content="index.html">
+<meta property="og:title" content="Html Page Details Generator">
+<meta property="og:description" content="This site is for creating html files by filling in the designated details.">
+<meta property="og:image" content="img/background.webp">
+ 
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image"/>
+<meta property="twitter:url" content="index.html">
+<meta property="twitter:title" content="Html Page Details Generator">
+<meta property="twitter:description" content="This site is for creating html files by filling in the designated details.">
+<meta property="twitter:image" content="img/background.webp">
 </head>
-
 <body>
 
+<!---HEADER---->
+<div class="header">
+<!---Topnav--->
+<div class="topnav">
+<a href="index.html" alt="Home">Watch film</a>
+<!---Open Sidebar---->
+<img src="img/logo.png" class="active"  id="nodisplay" alt="Menu">
+</div>
+<!---End Topnav--->
 
+<!---SECTION 1--->
 
-<h2> </h2>
+<h1>This is an online destination for streaming latest film and anime content. With vast library of movies and shows from around the world, our platform offers something for every fan. </h1>
 
+<div class="container-2">
+<div class="row">
 
-
-<div class="sun"></div>
-
-
-
-<div class="cloud">
-
-<div class="top-left-cloud"></div>
-
-<div class="bottom-left-cloud"></div>
-
+<div class="column">
+<div class="block-1">
+<a href="#link" alt="Onepiece plus">
+<img src="img/poster-1.jpeg">
+<h2><span>Onepiece plus</span>&nbsp; Read One Piece Manga And Download Episodes</h2></a>
+</div>
 </div>
 
+<div class="column">
+<div class="block-1">
+<a href="#link" alt="Onepiece plus">
+<img src="img/poster-1.jpeg">
+<h2><span>Dragon Slayer</span>&nbsp; Read Dragon Slayer Manga And Download Episodes</h2></a>
+</div>
+</div>
 
+<div class="column">
+<div class="block-1">
+<a href="#link" alt="Onepiece plus">
+<img src="img/poster-1.jpeg">
+<h2><span>Onepiece plus</span>&nbsp; Read One Piece Manga And Download Episodes</h2></a>
+</div>
+</div>
 
+<div class="column">
+<div class="block-1">
+<a href="#link" alt="Onepiece plus">
+<img src="img/poster-1.jpeg">
+<h2><span>Dragon Slayer</span>&nbsp; Read Dragon Slayer Manga And Download Episodes</h2></a>
+</div>
+</div>
 
+</div>
+</div></br>
+<!---END SECTION 1--->
 
-<div class="mountain"></div>
-
-<div class="mountain2"></div>
-
-<div class="mountain3"></div>
-
-<div class="mountain4"></div>
-
-
-
-<div class="right-road-side"></div>
-
-<div class="walkpath"></div>
-
-<div class="road-divider"></div>
-
-<div class="left-road-side"></div>
-
-
+<!---FOOTER--->
+<footer>
+<p> © 2024 Watch Film</p>
+</footer>
+<!---END FOOTER--->
 
 </body>
-  </html
+</html>
